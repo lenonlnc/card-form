@@ -27,7 +27,7 @@ export default function Home() {
             <p className="font-normal text-xs">Card number</p>
             <input
               onChange={handleCardChange}
-              maxLength={15}
+              maxLength={19}
               name="number"
               className="card-number rounded h-10 w-full font-thin border bg-primary-3 shadow-sm p-4 border-primary-3 placeholder-slate-400 focus:outline-none focus:border-violet-800 focus:ring-violet-800 block  sm:text-sm focus:ring-1"
               placeholder="Card number"
@@ -66,7 +66,7 @@ export default function Home() {
               <input
                 onChange={handleCardChange}
                 name="cvv"
-                maxLength={15}
+                maxLength={3}
                 className="rounded h-9 bg-primary-3 font-thin shadow-sm p-4 border-primary-3 placeholder-slate-400 focus:outline-none focus:border-violet-800 focus:ring-violet-800 block  sm:text-sm focus:ring-1"
                 placeholder="CVV"
                 type="text"
