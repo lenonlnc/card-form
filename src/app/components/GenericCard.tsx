@@ -28,10 +28,10 @@ export function GenericCard({
             alt="flag"
           />
         </div>
-        <p className="font-normal pb-6 proportional-nums">
+        <div className="font-normal pb-6 proportional-nums">
           <p className="text-xs">card number</p>
-          {number ? number : "**** **** **** ****"}
-        </p>
+          <p>{number ? number : "**** **** **** ****"}</p>
+        </div>
         <div className="flex">
           <div className="flex flex-1 flex-col ">
             <p className="text-xs">card holder</p>

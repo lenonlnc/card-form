@@ -67,7 +67,7 @@ export default function Home() {
                 onChange={handleCardChange}
                 name="cvv"
                 maxLength={15}
-                className="rounded  h-9 bg-primary-3 font-thin shadow-sm p-4 border-primary-3 placeholder-slate-400 focus:outline-none focus:border-violet-800 focus:ring-violet-800 block  sm:text-sm focus:ring-1"
+                className="rounded h-9 bg-primary-3 font-thin shadow-sm p-4 border-primary-3 placeholder-slate-400 focus:outline-none focus:border-violet-800 focus:ring-violet-800 block  sm:text-sm focus:ring-1"
                 placeholder="CVV"
                 type="text"
               />
@@ -82,7 +82,7 @@ export default function Home() {
             cvv={card.cvv}
           />
           <div className="flex items-center gap-2">
-            <i className="fa-solid fa-shield text-green-500" />
+            <i className="fa-solid fa-shield text-green-600" />
             <p className="font-normal text-xs">Your informations are safe</p>
           </div>
         </div>
