@@ -18,21 +18,28 @@ export function GenericCard({
   return (
     <div className="flex items-center justify-center ">
       <div className="bg-gradient-to-br from-pink-500 to-yellow-500 w-64 h-44 rounded-lg px-4">
-        <Image
-          className="pb-10"
-          src="/visa-logo-black-and-white.png"
-          width={40}
-          height={40}
-          alt="flag"
-        />
-        <p className="font-normal pb-6">
-          {number ? number : "***************"}
+        {/* <Image src="/cc-chip.png" alt="chip" width={10} height={10} /> */}
+        <div className="flex justify-end">
+          <Image
+            className="pb-4"
+            src="/visa-logo-black-and-white.png"
+            width={40}
+            height={40}
+            alt="flag"
+          />
+        </div>
+        <p className="font-normal pb-6 proportional-nums">
+          <p className="text-xs">card number</p>
+          {number ? number : "**** **** **** ****"}
         </p>
         <div className="flex">
-          <div className="flex flex-1 font-thin">
-            <p>{holder ? holder : "Your name goes here"}</p>
+          <div className="flex flex-1 flex-col ">
+            <p className="text-xs">card holder</p>
+
+            <p className="font-thin">{holder ? holder : "Your name"}</p>
           </div>
-          <div>
+          <div className="flex flex-col items-center">
+            <p className="text-xs">expiration</p>
             <p className="font-thin">
               {expiratioMonth && expiratioYear
                 ? `${expiratioMonth}/${expiratioYear}`
